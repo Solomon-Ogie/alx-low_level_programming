@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Point of Entry
+ * main - Start point
  *
  * Return: 0
  */
@@ -10,7 +10,7 @@ int main(void)
 {
 	char low;
 
-	for (low = 'a'; low<= 'z'; low++)
+	for (low = 'a'; low <= 'z'; low++)
 		putchar(low);
 	printf("\n");
 
