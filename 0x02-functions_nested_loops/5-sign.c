@@ -2,11 +2,11 @@
 
 /**
  *
- *  * print_sign - function to check for a sign of a number
+ * print_sign - function to check for a sign of a number
  *
- *   * @n:  int that will be used for the argument of the function
+ * @n:  int that will be used for the argument of the function
  *
- *    * Return: 0 (success)
+ * Return: 0 (success)
  *
  */
 
@@ -43,5 +43,6 @@ int print_sign(int n)
 									return (0);
 
 										}
+
 
 }
