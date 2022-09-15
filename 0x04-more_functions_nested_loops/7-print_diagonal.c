@@ -3,7 +3,7 @@
 
 /**
  * print_diagonal - print a diagonal
- * @z: parameter
+ * @n: parameter
  * Return: returns null
  */
 
