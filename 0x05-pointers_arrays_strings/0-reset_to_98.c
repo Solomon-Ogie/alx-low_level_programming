@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * reset_to_98 - takes a pointer to ain int parameter
  * and it updates the vaule it points to 98
