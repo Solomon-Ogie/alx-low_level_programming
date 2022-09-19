@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * strlen - length of a string
+ * _strlen - length of a string
  * @s: a pointer to an int that will be changed/updated
  *
  * Return: Always 0
