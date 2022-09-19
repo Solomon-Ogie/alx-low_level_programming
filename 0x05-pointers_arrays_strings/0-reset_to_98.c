@@ -1,0 +1,13 @@
+/**
+ * reset_to_98 - takes a pointer to ain int parameter
+ * and it updates the vaule it points to 98
+ *
+ * @n: int parameter
+ *
+ * Return: Nothing
+ */
+
+void reset_to_98(int *n)
+{
+	*n = 98;
+}
