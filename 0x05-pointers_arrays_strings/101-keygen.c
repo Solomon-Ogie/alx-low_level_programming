@@ -5,24 +5,50 @@
 
 /**
  * keygen - a program that generates random valid passwords
- * for the program 101.crackme
+ * for the program 1010.crackme
  *
- * Return: generated password
+ * Return: 0 Always
  */
 
 int main(void)
 {
-	char c;
-	int x;
+	char password[84];
+	int index = 0, sum = 0, diff_h1, diff_h2;
 
 	srand(time(0));
-	while (x <= 2645)
+
+	while (sum < 2772)
 	{
-		c = rand() % 128;
-		x += c;
-		putchar(c);
+		password[index] = 33 + rand() % 94;
+		sum += password[index++];
 	}
-	putchar(2772 - x);
+
+	password[index] = '\0';
+
+	if (sum != 2772)
+	{
+		diff_h1 = (sum - 2772) / 2;
+		diff_h2 = (sum - 2772) / 2;
+		if ((sum - 2772) % 2 != 0)
+			diff_h1++;
+		for (index = 0; password[index]; index++)
+		{
+			if (password[index] >= (33 + diff_h1))
+			{
+				password[index] -= diff_h1;
+				break;
+			}
+		}
+		for (index = 0; password[index]; index++)
+		{
+			if (password[index] >= (33 + diff_h2))
+			{
+				password[index] -= diff_h2;
+				break;
+			}
+		}
+	}
+	printf("%s", password);
 
 	return (0);
 }
