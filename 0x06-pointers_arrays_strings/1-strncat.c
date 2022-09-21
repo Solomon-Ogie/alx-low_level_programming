@@ -4,12 +4,12 @@
  * _strncat - a function that concatenates two strings
  * @dest: points to destination input
  * @src: points to source input
- * @a: most number of bytes from @src
+ * @n: most number of bytes from @src
  *
  * Return: dest
  */
 
-char *_strncat(char *dest, char *src, int a)
+char *_strncat(char *dest, char *src, int n)
 {
 	int b, i;
 
@@ -18,7 +18,7 @@ char *_strncat(char *dest, char *src, int a)
 	while (dest[b])
 		b++;
 
-	for (i = 0; i < a && src[i] != '\0'; i++)
+	for (i = 0; i < n && src[i] != '\0'; i++)
 		dest[b + i] = src[i];
 	dest[b + 1] = '\0';
 
