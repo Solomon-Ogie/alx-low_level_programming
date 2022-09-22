@@ -1,50 +1,22 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_number - Prints an integer.
  * @n: the integer to be printed.
- *
- * Return: 0
  */
 
 void print_number(int n)
 {
-	int power, peg, riff;
+	unsigned int num = n;
 
-	peg = 0;
-	power = 1;
-	riff = n;
 	if (n < 0)
 	{
 		_putchar('-');
-		peg = 1;
+		num = -num;
 	}
 
-	while (riff > 9 || hold < -9)
-	{
-		power *= 10;
-		riff /= 10;
-	}
+	if ((num / 10) > 0)
+		print_number(num / 10);
 
-	while (power > 0)
-	{
-		if (power > 9)
-		{
-			if (peg)
-				_putchar((n / power % 10) + '0');
-			else
-				_putchar((n / power % 10) * -1 + '0');
-
-			power /= 10;
-		}
-		if (power == 1)
-		{
-			if (peg)
-				_putchar((n % 10) * -1 + '0');
-			else
-				_putchar(n % 10 + '0');
-			power = 0;
-		}
-	}
+	_putchar((num % 10) + '0');
 }
