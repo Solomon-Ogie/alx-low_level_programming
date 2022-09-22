@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/* main - function to print single line code */
 int main(void)
 {
 	int n;
