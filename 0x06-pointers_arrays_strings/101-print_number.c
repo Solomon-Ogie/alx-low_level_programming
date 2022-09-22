@@ -1,13 +1,11 @@
 #include "main.h"
 
 /**
- * print_number - prints any integers with
- * putchar
- * @n: Number to print
+ * print_number - Prints any integer with putchar
+ * @n: Number to prints
  *
  * Return: Null
  */
-
 void print_number(int n)
 {
 	unsigned int x;
@@ -24,6 +22,4 @@ void print_number(int n)
 		print_number(x / 10);
 
 	_putchar(x % 10 + '0');
-
-	return (0);
 }
