@@ -1,18 +1,17 @@
 #include "main.h"
 /**
- * main - Start Point
- *print_alphabet - code to print alphabet
+ * print_alphabet - function to print abc
  *
- * Description - print_alphabet - function to print abcd
- * Return: 0 (Success)
+ * Return: 0
  */
+
 void print_alphabet(void)
 {
-	int n;
+	char c;
 
-	for (n = 'a'; n <= 'z'; n++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(n);
+		_putchar(c);
 	}
 	_putchar('\n');
 }
