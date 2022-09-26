@@ -12,14 +12,12 @@
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int a:
-	{
+	unsigned int index;
+	unsigned char *destination = dest;
+	const unsigned char *source = src;
 
-		for (a = 0; a < n; a++)
-		{
-			dest[a] = src[a];
-		}
+	for (index = 0; index < n; index++)
+		destination[index] = source[index];
 
-		return (dest);
-	}
+	return(dest);
 }
