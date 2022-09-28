@@ -8,7 +8,7 @@
 
 int evaluate_num(int num, int iterator)
 {
-	if (iterator == num -1)
+	if (iterator == num - 1)
 	{
 		return (1);
 	}
