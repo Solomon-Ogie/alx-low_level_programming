@@ -36,6 +36,10 @@ int is_prime_number(int num)
 	iterator = 2;
 	if (num < 2)
 	{
+		return (0);
+	}
+	if (num == 2)
+	{
 		return (1);
 	}
 	return (evaluate_num(num, iterator));
