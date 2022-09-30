@@ -5,7 +5,7 @@
 /**
  *main - prints the multiplication of two integers
  *@argc: Counts the argument
- *@argv: argument*
+ *@argv: argument
  *Return: 0 if true, 1 if false
  */
 
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		a = atoi(argv[1]);
 		b = atoi(argv[2]);
 
-		printf("%d\n", a * b);
+		printf("%d\n", a *b);
 
 		return (0);
 	}
