@@ -25,13 +25,14 @@ int check_num(char *str)
 
 		count++;
 	}
+	return (1);
+	}
 
 	/**
-	 * main - print the name of the program
-	 * @argc: Counts the argument
-	 * @argv: Arguments
-	 *
-	 * Return: 0 (Success)
+	 *main - print the name of the program
+	 *@argc: Counts the argument
+	 *@argv: Arguments
+	 *Return: 0 (Success)
 	 */
 
 	int main(int argc, char *argv[])
