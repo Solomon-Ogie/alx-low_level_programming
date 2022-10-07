@@ -19,7 +19,7 @@ int find_len(char *str)
 {
 	int len = 0;
 
-	while = (*str++)
+	while (*str++)
 		len++;
 
 	return (len);
@@ -64,7 +64,7 @@ char *create_xarray(int size)
 
 char *iterate_zeroes(char *str)
 {
-	while (*str && str == '0')
+	while (*str && *str == '0')
 		str++;
 
 	return (str);
