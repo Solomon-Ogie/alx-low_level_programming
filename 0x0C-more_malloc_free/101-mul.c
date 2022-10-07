@@ -109,7 +109,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 {
 	int mult_len, num, tens = 0;
 
-	mult_len = find_len(mult) -1;
+	mult_len = find_len(mult) - 1;
 	mult += mult_len;
 
 	while (*prod)
@@ -118,7 +118,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 		prod++;
 	}
 
-	prod --;
+	prod--;
 
 	while (zeroes--)
 	{
@@ -139,7 +139,6 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 		*prod = (num % 10) + '0';
 		tens = num / 10;
 	}
-	
 	if (tens)
 		*prod = (tens % 10) + '0';
 }
