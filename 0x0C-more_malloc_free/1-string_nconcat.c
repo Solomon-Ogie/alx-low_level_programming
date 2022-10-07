@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * string_nconcat _ concatenates two strings
+ *string_nconcat _ concatenates two strings
  * @s1: first string
  * @s2: second string
  * @n: index
@@ -32,10 +32,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = size2;
 	p = malloc((size1 + n + 1) * sizeof(char));
 
-	if (p = NULL)
+	if (p == NULL)
 		return (0);
 
-	for (i =0; i < size1; i++)
+	for (i = 0; i < size1; i++)
 	{
 		p[i] = s1[i];
 	}
