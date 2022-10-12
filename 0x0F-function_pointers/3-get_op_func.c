@@ -3,13 +3,13 @@
 /**
  * get_op_func - function pointer that selects the correct function to perform
  * the operation asked by the user
- * @s: operator given by the user
+ *@s: the operator given by the user
  *
  * Return: points to the function that corresponds
  * to the operator given as parameter
  */
 
-int (*get_op_func(char *s)),(int, int)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
@@ -18,7 +18,7 @@ int (*get_op_func(char *s)),(int, int)
 		{"/", op_div},
 		{"%", op_mod},
 		{NULL, NULL}
-	}:
+	};
 	int i;
 
 	i = 0;
